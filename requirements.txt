@@ -1,0 +1,19 @@
+# Tested with: Python 3.13 / transformers 4.57.6 / datasets 3.6.0 / torch 2.15 (CPU smoke test).
+# Install torch FIRST with the build matching your CUDA driver (see https://pytorch.org/get-started/locally/),
+# then: pip install -r requirements.txt
+torch>=2.2
+transformers>=4.46,<5
+datasets>=3.0,<4
+accelerate>=0.34
+huggingface_hub>=0.25
+soundfile>=0.12
+librosa>=0.10
+rapidfuzz>=3.0
+jiwer>=3.0
+numpy
+pandas
+tqdm
+matplotlib
+sentencepiece
+# only needed for the optional IndicConformer zero-shot reference model:
+onnxruntime
